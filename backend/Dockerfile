@@ -1,15 +1,8 @@
-FROM python:3.10
+FROM python:3.10-slim
 
 WORKDIR /app
 
-# Cài đặt các dependencies cần thiết cho MySQL
-RUN apt-get update && apt-get install -y \
-    default-libmysqlclient-dev \
-    build-essential \
-    pkg-config \
-    && rm -rf /var/lib/apt/lists/*
-
-# Copy requirements và cài đặt Python packages
+# Copy requirements và cài đặt Python packages (PyMySQL không cần build tools)
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 

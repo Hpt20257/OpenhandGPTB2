@@ -7,7 +7,7 @@
 - **Python**: 3.10
 - **Flask**: 2.3.2
 - **MySQL**: 8.0
-- **React**: 18.2.0 (TypeScript)
+- **React**: 19.1.0 (TypeScript)
 - **Node.js**: 18.16.1
 - **Docker Desktop**: >= 24.x
 
